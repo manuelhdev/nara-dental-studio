@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ceramic: #f7f6f2;
+  --color-bone: #eae6de;
+  --color-graphite: #222321;
+  --color-clinical: #70736f;
+  --color-mineral: #44574f;
+  --color-mineral-deep: #35443d;
+  --color-sage: #aab7af;
+  --color-terracotta: #b77966;
+
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    background-color: var(--color-ceramic);
+    color: var(--color-graphite);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background-color: var(--color-mineral);
+    color: var(--color-ceramic);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-mineral);
+    outline-offset: 3px;
+  }
+
+  .bg-mineral :focus-visible,
+  .bg-graphite :focus-visible,
+  .bg-mineral-deep :focus-visible {
+    outline-color: var(--color-sage);
+  }
+}
+
+@utility tag {
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--color-clinical);
+}
+
+@utility display {
+  font-family: var(--font-display);
+  font-weight: 300;
+  line-height: 1.02;
+  letter-spacing: -0.01em;
+}
+
+/* Fine hairline used across the clinical graphic system */
+@utility hairline {
+  border-color: color-mix(in srgb, var(--color-graphite) 14%, transparent);
+}
