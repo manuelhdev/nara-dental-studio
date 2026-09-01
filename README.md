@@ -1,4 +1,4 @@
-﻿# NARA Dental Studio
+# NARA Dental Studio
 
 Concept website for a modern dental clinic, focused on creating a polished, responsive and interactive user experience.
 
@@ -42,7 +42,22 @@ The goal of the project was to go beyond a traditional landing page and create a
 
 ## Project Structure
 
-```text
+````	ext
+src/
+  components/
+    cases/
+    comparison/
+    diagnostic/
+    layout/
+    motion/
+    sections/
+    ui/
+  data/
+  lib/
+  pages/
+  App.tsx
+  index.css
+  main.tsx
 src/
 â”œâ”€â”€ components/
 â”‚   â”œâ”€â”€ cases/
@@ -92,7 +107,22 @@ npm run lint
 
 Users can select common dental concerns and explore possible treatment paths through an interactive interface.
 
-The component manages contextual information, transitions and responsive behavior without treating the interface as a medical diagnostic tool.
+The component manages con`	ext
+src/
+  components/
+    cases/
+    comparison/
+    diagnostic/
+    layout/
+    motion/
+    sections/
+    ui/
+  data/
+  lib/
+  pages/
+  App.tsx
+  index.css
+  main.tsxual information, transitions and responsive behavior without treating the interface as a medical diagnostic tool.
 
 ### Interactive dental arch
 
@@ -129,5 +159,5 @@ The contact information, clinic identity, addresses and other business details u
 
 Full Stack Developer
 
-TypeScript Â· React Â· Next.js Â· Node.js Â· NestJS Â· PostgreSQL Â· Docker
+TypeScript, React, Next.js, Node.js, NestJS, PostgreSQL, Docker
 
